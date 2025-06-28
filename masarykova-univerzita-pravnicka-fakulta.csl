@@ -377,6 +377,9 @@
               <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
+            <else-if type="bill">
+              <text variable="title" />
+            </else-if>
             <else>
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" />
@@ -512,6 +515,25 @@
                   <text variable="number" />
                   <text macro="locator-or-period" />
                 </if>
+              </choose>
+            </else-if>
+            <else-if type="bill">
+              <choose>
+                <if variable="section page authority" match="any">
+                  <text prefix="§ " variable="section" suffix=" " />
+                  <text prefix="odst. " variable="page" suffix=" " />
+                  <text prefix="písm. " variable="authority" suffix=") " />
+                  <text prefix="zákona č. " variable="number" />
+                  <text prefix=", " variable="title" />
+                  <text prefix=", " value="ve znění pozdějších předpisů" />
+                  <text macro="locator-or-period" />
+                </if>
+                <else>
+                  <text prefix="Zákon č. " variable="number" />
+                  <text prefix=", " variable="title" />
+                  <text prefix=", " value="ve znění pozdějších předpisů" />
+                  <text macro="locator-or-period" />
+                </else>
               </choose>
             </else-if>
             <else>
