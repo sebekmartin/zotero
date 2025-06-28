@@ -343,6 +343,16 @@
                 </if>
               </choose>
             </if>
+            <else-if type="webpage">
+              <text macro="contributors-short" suffix=". " />
+              <text macro="title-long" font-style="italic" />
+              <choose>
+                <if variable="author" match="none">
+                  <text prefix=" [" value="online" suffix="]" />
+                </if>
+              </choose>
+              <text macro="locator-or-period" />
+            </else-if>
             <else>
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" />
