@@ -333,14 +333,27 @@
           <text term="ibid" />
         </else-if>
         <else-if position="subsequent">
-          <text macro="contributors-short" suffix=". " />
-          <text macro="title-long" font-style="italic" />
           <choose>
-            <if variable="author" match="none">
-              <text prefix=", " macro="issued-year" />
+            <if type="legal_case">
+              <choose>
+                <if variable="language" match="none">
+                  <text variable="title" suffix=" " />
+                  <text variable="number" />
+                  <text macro="locator-or-period" />
+                </if>
+              </choose>
             </if>
+            <else>
+              <text macro="contributors-short" suffix=". " />
+              <text macro="title-long" font-style="italic" />
+              <choose>
+                <if variable="author" match="none">
+                  <text prefix=", " macro="issued-year" />
+                </if>
+              </choose>
+              <text macro="locator-or-period" />
+            </else>
           </choose>
-          <text macro="locator-or-period" />
         </else-if>
         <else>
           <choose>
@@ -421,6 +434,20 @@
               <text prefix=", " variable="genre" />
               <text prefix=", " variable="publisher" />
               <text macro="locator-or-period" />
+            </else-if>
+            <else-if type="legal_case">
+              <choose>
+                <if variable="language" match="none">
+                  <text variable="title" suffix=" " />
+                  <date prefix="ze dne " variable="issued" suffix=", ">
+                    <date-part name="day" suffix=". " />
+                    <date-part name="month" form="numeric" suffix=". " />
+                    <date-part name="year" />
+                  </date>
+                  <text variable="number" />
+                  <text macro="locator-or-period" />
+                </if>
+              </choose>
             </else-if>
             <else>
               <text macro="contributors-long" suffix=". " />
