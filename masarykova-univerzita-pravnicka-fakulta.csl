@@ -349,6 +349,12 @@
               <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
+            <else-if type="article-journal">
+              <text macro="contributors-short" suffix=". " />
+              <text variable="title" font-style="italic" suffix=", " />
+              <text prefix="s. " variable="page" />
+              <text macro="locator-or-period" />
+            </else-if>
             <else-if type="webpage">
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" />
@@ -432,15 +438,8 @@
               <text macro="title-long" suffix=". " />
               <text macro="container" />
               <text prefix=". " macro="issued" />
-              <choose>
-                <if variable="URL" match="any">
-                  <text prefix=", " macro="citation-locator" />
-                  <text prefix=". " macro="identifier" />
-                </if>
-                <else>
-                  <text macro="locator-or-period" />
-                </else>
-              </choose>
+              <text prefix=", s. " variable="page" />
+              <text macro="locator-or-period" />
             </else-if>
             <else-if type="thesis" match="any">
               <text macro="contributors-long" suffix=". " />
@@ -581,19 +580,13 @@
           </choose>
         </else-if>
         <else-if type="article-journal" match="any">
-          <text macro="contributors-full" suffix=". " />
+          <text macro="contributors-long" suffix=". " />
           <text macro="title-long" suffix=". " />
-          <text macro="container-full" />
-          <text prefix=". " macro="issued" />
-          <choose>
-            <if variable="URL" match="any">
-              <text prefix=", " macro="page-range" />
-              <text prefix=". " macro="identifier" />
-            </if>
-            <else>
-              <text prefix=", " macro="page-range" suffix="." />
-            </else>
-          </choose>
+          <text macro="container" />
+          <text prefix=". " macro="issued-year" />
+          <text prefix=", č. " variable="issue" />
+          <text prefix=", s. " variable="page" />
+          <text macro="locator-or-period" />
         </else-if>
         <else-if type="thesis" match="any">
           <text macro="contributors-full" suffix=". " />
