@@ -371,6 +371,12 @@
               </choose>
               <text macro="locator-or-period" />
             </else-if>
+            <else-if type="thesis" match="any">
+              <text macro="contributors-short" suffix=". " />
+              <text macro="title-long" font-style="italic" />
+              <text prefix=", s. " variable="number-of-pages" />
+              <text macro="locator-or-period" />
+            </else-if>
             <else>
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" />
@@ -482,6 +488,8 @@
               <text prefix=". " macro="issued" />
               <text prefix=", " variable="genre" />
               <text prefix=", " variable="publisher" />
+              <text prefix=", " variable="publisher-place" />
+              <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="book">
@@ -651,12 +659,14 @@
           <text macro="locator-or-period" />
         </else-if>
         <else-if type="thesis" match="any">
-          <text macro="contributors-full" suffix=". " />
+          <text macro="contributors-long" suffix=". " />
           <text macro="title-long" font-style="italic" />
           <text prefix=" " macro="medium" />
           <text prefix=". " macro="issued" />
           <text prefix=", " variable="genre" />
-          <text prefix=", " variable="publisher" suffix="." />
+          <text prefix=", " variable="publisher" />
+          <text prefix=", " variable="publisher-place" />
+          <text macro="locator-or-period" />
         </else-if>
         <else-if type="bill legal_case legislation" match="none">
           <text macro="contributors-full" suffix=". " />
