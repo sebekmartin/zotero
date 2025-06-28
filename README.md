@@ -4,25 +4,60 @@ Ahoj,
 
 protože Zotero některé zdroje úplně nezvládá nebo nemá všechny věci co jsou potřeba, tak píšu, jak zadávat speciální zdroje.
 
-## **Zákony**
+- [**Zotero - vyplňování zdrojů**](#zotero---vyplňování-zdrojů)
+  - [Obecné pokyny](#obecné-pokyny)
+  - [Pokyny pro jednotlivé typy zdrojů](#pokyny-pro-jednotlivé-typy-zdrojů)
+    - [**Zákony**](#zákony)
+    - [Nařízení, úmluvy, vyhlášky atd](#nařízení-úmluvy-vyhlášky-atd)
 
-Jsou z Zoteru nachystané v části **- Návrh zákona**
+## Obecné pokyny
 
-Následně je potřeba vyplnit zákon následovně:
+Typicky, když chcete zadat číslo/rozsah stránek, ze kterých jste citovali, použijte pole "**počet stránek**"
 
-**Název**: název zákona malými písmeny - zákoník práce
+## Pokyny pro jednotlivé typy zdrojů
 
-**Číslo zákona**: klasicky číslo včetně koncovky Sb. - příklad 89/2012 Sb.
+### **Zákony**
 
-**Sekce**: sem se zadává případný paragraf - 4a
+Využívaný typ zdroje: **Návrh zákona**
 
-**Stránky zákoníku**: sem se dává odstavec - 1
+Pro vyplnění zdroje využijte následující pole:
 
-**Zákonodárný orgán**: do tohoto pole se zadává odstavec
+| Název pole v Zoteru | Využití | Příklad | Poznámka |
+|---------------------|---------|---------|----------|
+| **Název** | název zákona| občanský zákoník | |
+| **Číslo zákona** | označení zákona včetně koncovky | 89/2012 Sb. | |
+| **Sekce** | citovaný paragraf  | 4a | není nutné jej vyplnit |
+| **Stránky zákoníku** | citovaný odstavec | 1 | není nutné vyplňovat |
+| **Zákonodárný orgán** | citované písmeno | a | není nutné vyplňovat |
 
-## **Nařízení, úmluva, vyhlášky atd.**
+Výsledkem zadání z příkladu je následující tvar citace
 
-Jsou v Zoteru udělané v části **Nařízení**
+```txt
+§ 4a odst. 1 písm. m) zákona č. 89/2012 Sb., zákoník práce, ve znění pozdějších předpisů.
+```
+
+### Nařízení, úmluvy, vyhlášky atd
+
+Využívaný typ zdroje: **Nařízení**
+
+> [!WARNING]
+> Tento typ citace není ještě nastaven v současném formátu
+
+<!-- Pro vyplnění zdroje využijte následující pole:
+
+| Název pole v Zoteru | Využití | Příklad | Poznámka |
+|---------------------|---------|---------|----------|
+| **Název** | název zákona| občanský zákoník | |
+| **Číslo zákona** | označení zákona včetně koncovky | 89/2012 Sb. | |
+| **Sekce** | citovaný paragraf  | 4a | není nutné jej vyplnit |
+| **Stránky zákoníku** | citovaný odstavec | 1 | není nutné vyplňovat |
+| **Zákonodárný orgán** | citované písmeno | a | není nutné vyplňovat |
+
+Výsledkem zadání z příkladu je následující tvar citace
+
+```txt
+§ 4a odst. 1 písm. m) zákona č. 89/2012 Sb., zákoník práce, ve znění pozdějších předpisů.
+``` 
 
 Je potřeba vyplnit následovně
 
@@ -51,3 +86,4 @@ Pokud je vyplněno pole Autor a pole Historie je prázdné, použije se formát 
 Pokud není vypněno ani jedno, použije se obecný formát:
 
 *čl. 3 odst. 1 obecně závazné vyhlášky města Brna č. 11/2017, o nočním klidu*
+-->
