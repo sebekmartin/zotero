@@ -343,6 +343,12 @@
                 </if>
               </choose>
             </if>
+            <else-if type="book">
+              <text macro="contributors-short" suffix=". " />
+              <text variable="title" font-style="italic" />
+              <text prefix=", s. " variable="number-of-pages" />
+              <text macro="locator-or-period" />
+            </else-if>
             <else-if type="webpage">
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" />
@@ -443,6 +449,14 @@
               <text prefix=". " macro="issued" />
               <text prefix=", " variable="genre" />
               <text prefix=", " variable="publisher" />
+              <text macro="locator-or-period" />
+            </else-if>
+            <else-if type="book">
+              <text macro="contributors-long" suffix=" " />
+              <text variable="title" font-style="italic" suffix=". " />
+              <text macro="publisher" suffix=", " />
+              <text macro="issued-year" />
+              <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="legal_case">
