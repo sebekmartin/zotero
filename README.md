@@ -9,6 +9,7 @@ protože Zotero některé zdroje úplně nezvládá nebo nemá všechny věci co
   - [Pokyny pro jednotlivé typy zdrojů](#pokyny-pro-jednotlivé-typy-zdrojů)
     - [**Zákony**](#zákony)
     - [Nařízení, úmluvy, vyhlášky atd](#nařízení-úmluvy-vyhlášky-atd)
+    - [Soudní rozhodnutí](#soudní-rozhodnutí)
 
 ## Obecné pokyny
 
@@ -87,3 +88,28 @@ Pokud není vypněno ani jedno, použije se obecný formát:
 
 *čl. 3 odst. 1 obecně závazné vyhlášky města Brna č. 11/2017, o nočním klidu*
 -->
+
+### Soudní rozhodnutí
+
+Využívaný typ zdroje: **Případ**
+
+Pro vyplnění zdroje využijte následující pole:
+
+| Název pole v Zoteru | Využití | Příklad | Poznámka |
+|---------------------|---------|---------|----------|
+| **Název** | první část názvu | Usnesení Nejvyššího soudu | |
+| **Datum rozhodnutí** | datum rozhodnutí | 19.8.2024 | |
+| **Číslo spisu** | označení rozhodnutí včetně písmen | sp. zn. 29 Cdo 2073/2022 | může být jak spisová značka, tak číslo jednací |
+| **Jazyk** | přepínač formátu | 1 | pokud je vyplněn, změní se formát vypsání rozhodnutí viz níže |
+
+Výsledkem zadání bez vyplněného jazyka je následující tvar citace
+
+```txt
+Usnesení Nejvyššího soudu ze dne 29. 8. 2024, sp. zn. 29 Cdo 2073/2022.
+```
+
+<!-- Výsledkem zadání včetně vyplněného jazyka je následující tvar citace
+
+```txt
+Usnesení Nejvyššího soudu ze dne 29. 8. 2024, sp. zn. 29 Cdo 2073/2022.
+``` -->
