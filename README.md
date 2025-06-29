@@ -8,12 +8,12 @@ protože Zotero některé zdroje úplně nezvládá nebo nemá všechny věci co
   - [Obecné pokyny](#obecné-pokyny)
   - [Pokyny pro jednotlivé typy zdrojů](#pokyny-pro-jednotlivé-typy-zdrojů)
     - [**Zákony**](#zákony)
-    - [Nařízení, úmluvy, vyhlášky atd](#nařízení-úmluvy-vyhlášky-atd)
+    - [Nařízení, úmluvy, vyhlášky](#nařízení-úmluvy-vyhlášky)
     - [Soudní rozhodnutí](#soudní-rozhodnutí)
 
 ## Obecné pokyny
 
-Typicky, když chcete zadat číslo/rozsah stránek, ze kterých jste citovali, použijte pole "**počet stránek**"
+Typicky, když chcete zadat číslo/rozsah stránek, ze kterých jste citovali, použijte pole "**\# stran**" nebo **Rozsah**
 
 ## Pokyny pro jednotlivé typy zdrojů
 
@@ -37,7 +37,7 @@ Výsledkem zadání z příkladu je následující tvar citace
 § 4a odst. 1 písm. m) zákona č. 89/2012 Sb., zákoník práce, ve znění pozdějších předpisů.
 ```
 
-### Nařízení, úmluvy, vyhlášky atd
+### Nařízení, úmluvy, vyhlášky
 
 Využívaný typ zdroje: **Nařízení**
 
