@@ -34,7 +34,7 @@ Pro vyplnění zdroje využijte následující pole:
 Výsledkem zadání z příkladu je následující tvar citace
 
 ```txt
-§ 4a odst. 1 písm. m) zákona č. 89/2012 Sb., zákoník práce, ve znění pozdějších předpisů.
+§ 4a odst. 1 písm. m) zákona č. 89/2012 Sb., občanský zákoník, ve znění pozdějších předpisů.
 ```
 
 ### Nařízení, úmluvy, vyhlášky
@@ -97,7 +97,7 @@ Pro vyplnění zdroje využijte následující pole:
 
 | Název pole v Zoteru | Využití | Příklad | Poznámka |
 |---------------------|---------|---------|----------|
-| **Název** | první část názvu | Usnesení Nejvyššího soudu | |
+| **Název** | typ rozhodnutí a soudu | Usnesení Nejvyššího soudu | |
 | **Datum rozhodnutí** | datum rozhodnutí | 19.8.2024 | |
 | **Číslo spisu** | označení rozhodnutí včetně písmen | sp. zn. 29 Cdo 2073/2022 | může být jak spisová značka, tak číslo jednací |
 | **Jazyk** | přepínač formátu | 1 | pokud je vyplněn, změní se formát vypsání rozhodnutí viz níže |
