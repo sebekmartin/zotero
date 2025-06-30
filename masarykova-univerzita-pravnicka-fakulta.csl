@@ -345,19 +345,16 @@
             <else-if type="book">
               <text macro="contributors-short" suffix=". " />
               <text variable="title" font-style="italic" />
-              <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="chapter">
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" suffix="" />
-              <text prefix=", s. " variable="page" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="article-journal">
               <text macro="contributors-short" suffix=". " />
               <text variable="title" font-style="italic" suffix=", " />
-              <text prefix="s. " variable="page" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="webpage">
@@ -373,7 +370,6 @@
             <else-if type="thesis" match="any">
               <text macro="contributors-short" suffix=". " />
               <text macro="title-long" font-style="italic" />
-              <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="bill">
@@ -427,21 +423,18 @@
                 <if variable="URL" match="any">
                   <text prefix=". " macro="issued" />
                   <text prefix=", " macro="citation-locator" />
-                  <text prefix=", s. " variable="page" />
                   <text prefix=". Dostupné z: " macro="identifier" />
                 </if>
                 <else-if variable="issued" match="none">
                   <choose>
                     <if variable="publisher publisher-place" match="any">
                       <text prefix=". " macro="publisher" />
-                      <text prefix=", s. " variable="page" />
                     </if>
                   </choose>
                   <text macro="locator-or-period" />
                 </else-if>
                 <else>
                   <text prefix=". " macro="issued" />
-                  <text prefix=", s. " variable="page" />
                   <text macro="locator-or-period" />
                 </else>
               </choose>
@@ -480,7 +473,6 @@
               <text macro="title-long" suffix=". " />
               <text macro="container" />
               <text prefix=". " macro="issued" />
-              <text prefix=", s. " variable="page" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="thesis" match="any">
@@ -491,7 +483,6 @@
               <text prefix=", " variable="genre" />
               <text prefix=", " variable="publisher" />
               <text prefix=", " variable="publisher-place" />
-              <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="book">
@@ -499,7 +490,6 @@
               <text variable="title" font-style="italic" suffix=". " />
               <text macro="publisher" suffix=", " />
               <text macro="issued-year" />
-              <text prefix=", s. " variable="number-of-pages" />
               <text macro="locator-or-period" />
             </else-if>
             <else-if type="legal_case">
@@ -623,21 +613,18 @@
             <if variable="URL" match="any">
               <text prefix=". " macro="issued" />
               <text prefix=", " macro="citation-locator" />
-              <text prefix=", s. " variable="page" />
               <text prefix=". Dostupné z: " macro="identifier" />
             </if>
             <else-if variable="issued" match="none">
               <choose>
                 <if variable="publisher publisher-place" match="any">
                   <text prefix=". " macro="publisher" />
-                  <text prefix=", s. " variable="page" />
                 </if>
               </choose>
               <text macro="locator-or-period" />
             </else-if>
             <else>
               <text prefix=". " macro="issued" />
-              <text prefix=", s. " variable="page" />
               <text macro="locator-or-period" />
             </else>
           </choose>
@@ -676,7 +663,6 @@
           <text macro="container" />
           <text prefix=". " macro="issued-year" />
           <text prefix=", č. " variable="issue" />
-          <text prefix=", s. " variable="page" />
           <text macro="locator-or-period" />
         </else-if>
         <else-if type="thesis" match="any">
