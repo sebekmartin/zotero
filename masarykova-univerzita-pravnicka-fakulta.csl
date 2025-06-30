@@ -342,6 +342,7 @@
                 </if>
               </choose>
             </if>
+            
             <else-if type="book">
               <text macro="contributors-short" suffix=". " />
               <text variable="title" font-style="italic" />
@@ -524,6 +525,13 @@
                   <text macro="locator-or-period" />
                 </else>
               </choose>
+            </else-if>
+            <else-if type="legislation">
+              <text variable="container-title" suffix=" " />
+              <text variable="volume" suffix=" " />
+              <text prefix="publikovaná pod č. " variable="number" suffix=", " />
+              <text variable="title" />
+              <text macro="locator-or-period" />
             </else-if>
             <else>
               <text macro="contributors-long" suffix=". " />
